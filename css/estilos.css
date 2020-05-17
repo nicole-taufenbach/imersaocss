@@ -7,12 +7,12 @@
 body {
     font-family:'Open Sans', sans-serif;
     font-size: 12px;
-    background-image: url("file:///C:/Users/ntauf/Desktop/prog/imersaocss/css/background.png");
+    /* background-image: url("./background.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
-    background-color: #79bac1 ;
+    background-attachment: fixed; */
+    background-color: #79bac1; 
 }
 
 /* se a tela tiver pelo menos 400px vai carregar esses estilos:*/
@@ -36,7 +36,10 @@ body {
 
 .site-title {
     font-size: 4em;
+    background-size: 5em;
+    margin-top: 2em;
 }
+
 header {
     height: 50vh;
     display: flex;
@@ -58,6 +61,7 @@ a:hover {
     position: fixed;
     width: 100vw;
     top: 0px;
+    background-color: whitesmoke;
 }
 
 .menu li {
@@ -90,9 +94,10 @@ list-style: none;
     width: 240px;
     height: 180px;
     object-fit: cover;
+    transform: scale(1);
 }
 
-.grid {
+    .grid {
     display: grid;
     gap: 2em;
     justify-content: center;
@@ -121,4 +126,53 @@ list-style: none;
         justify-content: center;
         align-items: center;
     }
+}
+
+.contato {
+    padding-top: 2em;
+}
+
+.contato a {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    transition: text-shadow 1s;
+}
+
+.gridicons {
+    text-align: center;
+}
+
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 3px black;
+}
+
+/* .titulo {
+    transform: scale(0.2) translate(50vh);
+    opacity: 0;
+    transition: all;
+    animation: linear 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+    100% {
+        transform: scale(1.0) translate(50vh);
+        opacity: 1;
+    }
+} */
+
+.sobre h2 {
+    color: whitesmoke;
+    margin-bottom: 1,5em;
+    font-size: 1em;
+    padding: 2em;
+    min-height: 100vh;
+}
+
+.profile {
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-left: 1em;
 }
